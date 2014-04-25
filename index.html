@@ -8,11 +8,10 @@
     <meta name="description" content="Index Page">
     <meta name="author" content="Ahmad Ginanjar">
 
-    <title>Cover Template for Bootstrap</title>
-
     <!-- Bootstrap core CSS -->
     <link href="styles/css/bootstrap.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Ruluko' rel='stylesheet' type='text/css'>
+    <link href="styles/images/icons/favicon.jpeg" type="image/jpeg" rel="icon">
     <!--
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     -->
@@ -40,24 +39,44 @@
             background: rgba(128,128,128,.20);
         }
         #footer {
-            height: 150px; 
-            clear: both; 
-            margin-top: -150px; 
-            padding-top: 48%; 
-            margin-right: 40px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            /* Set the fixed height of the footer here */
+            height: 60px;
+            background:rgba(128,128,128,.30);
+            opacity: .7;
+            margin-left: -15px;
         }
         address {
             padding-top:20px;
         }
-
+        .footer {
+            margin-top: 21px;
+        }
+        .container.footer {
+            width: auto;
+            vertical-align: middle;
+            
+        }
+        .socmed {
+            margin-top: -22px;
+        }
+        ul li {
+            display: inline;
+            list-style-type: none;
+            padding-right: 0;
+            
+        }
     </style>
+    <title>Wilujeung sumping pamiarsa</title>
 </head>
 <body>
 <div class="container-fluid ">
 
     <div class="row" id="content">
         <div id="name" class="col-xs-6 col-md-3 pull-left">
-            <h1>Ahmad Ginanjar M <br></h1>
+            <h1>Ahmad Ginanjar <br></h1>
             <h4>Web Developer || Raran || Ayyubi</h4><br>
         </div>
         <div  id="address" class="col-xs-6 col-md-2 pull-left">
@@ -65,13 +84,22 @@
                 <strong>Drimo,Inc.</strong><br>
                 Home sweet home<br>
                 Bandung, 40624<br>
-                <em>ahmad.ginanjar.m@gmail.com</em>
+                <small> <i>ahmad.ginanjar.m@gmail.com</i></small>
             </address>
         </div>        
     </div>
 
-    <div class="footer pull-right" id="footer">
-        image: <a style="margin-top:00px" href="unsplash.com">unsplash.com</a>
+    <div class="footer row" id="footer">
+        <div class="container footer">
+        image: <a style="margin-top:00px" href="http://unsplash.com">unsplash.com</a>
+        </div>
+        <div class="socmed col-xs-6 col-md-4 pull-right">
+            <ul>
+                <li><a href="http://aginanjarm.wordpress.com" ><img src="styles/images/icons/socmed/wordpress.png" /></a></li>
+                <li><a href="http://github.com/aginanjar" ><img src="styles/images/icons/socmed/github.png" /></a></li>
+                <li><a href="http://facebook.com/aginanjarm" ><img src="styles/images/icons/socmed/facebook.png" /></a></li>
+            </ul>
+        </div>   
     </div>   
 </div>
 </body>
